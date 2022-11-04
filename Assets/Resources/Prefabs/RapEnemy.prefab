@@ -823,6 +823,7 @@ GameObject:
   - component: {fileID: 1762754926059165890}
   - component: {fileID: 4482447839987080424}
   - component: {fileID: 1620679349134770381}
+  - component: {fileID: 8942294564210051995}
   m_Layer: 0
   m_Name: RapEnemy
   m_TagString: Untagged
@@ -895,7 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLive: 1
-  deathPlayer: {fileID: 3073952814267372482}
+  death: {fileID: 0}
   health: 0
 --- !u!114 &4482447839987080424
 MonoBehaviour:
@@ -909,6 +910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbfb51e903d2e84faadc1f405de75b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _maxDistanceToPlayer: 0.8
+  _enemySpeed: 100
 --- !u!114 &1620679349134770381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,6 +925,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2123d6189605e3649aa7016bc1dc9e2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!195 &8942294564210051995
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3073952814267372482}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1.8
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3091467166719148391
 GameObject:
   m_ObjectHideFlags: 0
