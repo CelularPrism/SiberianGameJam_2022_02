@@ -6,12 +6,11 @@ using UnityEngine.AI;
 [RequireComponent(typeof(HealthSystem))]
 public class Enemy : MonoBehaviour, ITarget
 {
-    [Header("Settings for movement")]
+    [Header("Player")]
     [SerializeField] private GameObject _player;
 
     [Header("Settings for movement")]
     [SerializeField] private float _maxDistanceToPlayer = 1.5f;
-    [SerializeField] private int _enemySpeed = 100;
 
     private HealthSystem _enemyHealthSystem;
     private NavMeshAgent _enemyMeshAgent;
