@@ -6,13 +6,13 @@ public class HealthSystem : MonoBehaviour, IPlayerValue
 {
     public bool isLive = true;
 
-    [SerializeField] private GameObject deathPlayer;
+    [SerializeField] private GameObject death;
     [SerializeField] private float health;
     private IDeath _death;
 
     private void Start()
     {
-        _death = deathPlayer.GetComponent<IDeath>();
+        _death = death.GetComponent<IDeath>();
     }
 
     public void Damage(float value)
