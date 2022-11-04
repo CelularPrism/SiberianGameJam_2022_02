@@ -781,14 +781,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2752047851672742584, guid: 293fbf2b539d3f04a8127f4e2b1801f2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3277191559575302146, guid: 293fbf2b539d3f04a8127f4e2b1801f2, type: 3}
-      propertyPath: m_Name
-      value: HandRepair
-      objectReference: {fileID: 0}
     - target: {fileID: 3464207845001401699, guid: 293fbf2b539d3f04a8127f4e2b1801f2, type: 3}
       propertyPath: m_Name
       value: TestPlayer (1)
