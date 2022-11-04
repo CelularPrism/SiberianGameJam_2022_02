@@ -606,10 +606,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestPlayerResult
       objectReference: {fileID: 0}
-    - target: {fileID: 2492452468754069014, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
-      propertyPath: _playerSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2492452468754069015, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -654,6 +650,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2492452469172142985, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
+      propertyPath: panelDeath
+      value: 
+      objectReference: {fileID: 2022358647}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
 --- !u!1 &525084140 stripped
@@ -3247,6 +3247,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969285748}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2022358647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3267010080825215841, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
+  m_PrefabInstance: {fileID: 3267010080712723051}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2106110431
 GameObject:
   m_ObjectHideFlags: 0
