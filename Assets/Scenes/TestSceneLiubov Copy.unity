@@ -224,6 +224,10 @@ PrefabInstance:
       propertyPath: deathPlayer
       value: 
       objectReference: {fileID: 196557780}
+    - target: {fileID: 5894678040870254349, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2492452469172142991}
     - target: {fileID: 7979766420698439945, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -520,10 +524,6 @@ PrefabInstance:
       propertyPath: panelDeath
       value: 
       objectReference: {fileID: 464879882}
-    - target: {fileID: 2492452469731859113, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
-      propertyPath: _cameraRotationSpeed
-      value: 300
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
 --- !u!1 &2492452469172142984 stripped
@@ -534,6 +534,11 @@ GameObject:
 --- !u!1 &2492452469172142985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3863260988467413720, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
+  m_PrefabInstance: {fileID: 2492452469172142983}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2492452469172142991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2492452468754069015, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
   m_PrefabInstance: {fileID: 2492452469172142983}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3267010080712723051
@@ -668,14 +673,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 422228032, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
+      propertyPath: timeReload
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5337986761107770652, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
       propertyPath: m_Name
       value: TestEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 5894678040870254343, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
-      propertyPath: deathPlayer
+    - target: {fileID: 5894678040870254349, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
+      propertyPath: player
       value: 
-      objectReference: {fileID: 5894678040870254341}
+      objectReference: {fileID: 2492452469172142991}
     - target: {fileID: 7979766420698439945, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -722,11 +731,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
---- !u!1 &5894678040870254341 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5337986761107770652, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
-  m_PrefabInstance: {fileID: 5894678040870254340}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6347464283065649455
 PrefabInstance:
   m_ObjectHideFlags: 0
