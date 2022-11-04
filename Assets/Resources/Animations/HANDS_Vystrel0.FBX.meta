@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hands.001
+    second: {fileID: 2100000, guid: 337054ee665f0da4a9490c151bfb53a8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -60,7 +65,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.94756806
+      - time: 0.9613317
         functionName: ResetAnimations
         data: 
         objectReferenceParameter: {instanceID: 0}
