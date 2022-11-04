@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8586786894590855338}
   - component: {fileID: 6038172444674981604}
   - component: {fileID: 7908455062216128752}
+  - component: {fileID: 5894678040870254342}
+  - component: {fileID: 5894678040870254343}
   m_Layer: 0
   m_Name: TestEnemy
   m_TagString: Enemy
@@ -113,3 +115,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyDeadMaterial: {fileID: 2100000, guid: 072e9a9b61ac9e749b00a0904955db90, type: 2}
   _enemyDefaultMaterial: {fileID: 2100000, guid: bf90517ec1f099440a401f86a9422051, type: 2}
+--- !u!114 &5894678040870254342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5337986761107770652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2123d6189605e3649aa7016bc1dc9e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5894678040870254343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5337986761107770652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9425be2d821f5646b98f8b67d3516c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLive: 1
+  health: 5
