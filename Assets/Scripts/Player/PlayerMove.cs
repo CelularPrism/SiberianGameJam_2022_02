@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    [SerializeField] private float _speed;
     [SerializeField] private Quaternion _playerRotation;
+    [SerializeField] private float _speed;
+
+    private Transform _cameraTransform;
 
     private PlayerMovement _inputActions;
     private Vector3 _moveInput;
@@ -16,11 +18,15 @@ public class PlayerMove : MonoBehaviour
 
         _inputActions.Movement.Newaction.Enable();
     }
-
+    private void Start()
+    {
+        _cameraTransform = this.gameObject.transform.GetChild(0);
+    }
     private void Update()
     {
-        _moveInput = new Vector3(_inputActions.Movement.Newaction.ReadValue<Vector3>().x, 0.0f,
-            _inputActions.Movement.Newaction.ReadValue<Vector3>().y);
+        _moveInput = _cameraTransform.forward * _inputActions.Movement.Newaction.ReadValue<Vector3>().y;
+        _moveInput += _cameraTransform.right * _inputActions.Movement.Newaction.ReadValue<Vector3>().x;
+        _moveInput.y = 0;
 
         transform.position += _moveInput * _speed * Time.deltaTime;
 
