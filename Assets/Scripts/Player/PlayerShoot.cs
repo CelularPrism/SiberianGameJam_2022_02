@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShoot : MonoBehaviour
+public class PlayerShoot : MonoBehaviour, IPlayerValue
 {
     [Header("Shoot Settings")]
     [SerializeField] private Vector3 _aimCenter = new Vector3(0.5f, 0.5f, 0f);
@@ -70,6 +70,11 @@ public class PlayerShoot : MonoBehaviour
     {
         _playerActions.Actions.Shoot.Disable();
         _playerActions.Actions.Reload.Disable();
+    }
+
+    public float GetValue()
+    {
+        return _countOfShoot - _currentCountOfShoot;
     }
 
 }
