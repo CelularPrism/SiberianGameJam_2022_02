@@ -6,7 +6,6 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
 {
     [Header("Shoot Settings")]
     [SerializeField] private Vector3 _aimCenter = new Vector3(0.5f, 0.5f, 0f);
-    [SerializeField] private Transform _gunEnd;
     [SerializeField] private int _shootDistance = 100;
     [SerializeField] private int _countOfShoot = 7;
     [SerializeField] private int _currentCountOfShoot = 0;
