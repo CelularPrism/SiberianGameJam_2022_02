@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLive: 1
-  deathPlayer: {fileID: 2492452468754069003}
+  death: {fileID: 2492452468754069003}
   health: 10
 --- !u!1001 &2733555605523746285
 PrefabInstance:
