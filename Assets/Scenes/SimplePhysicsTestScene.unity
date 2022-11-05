@@ -1333,6 +1333,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682332851}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &704075891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3863260988467413720, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
+  m_PrefabInstance: {fileID: 289453926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &854963404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1340,6 +1345,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 422228029, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422228030, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422228032, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1907039314, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3483,7 +3500,7 @@ PrefabInstance:
     - target: {fileID: 3267010079020544128, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
       propertyPath: healthSystem
       value: 
-      objectReference: {fileID: 1681751733}
+      objectReference: {fileID: 704075891}
     - target: {fileID: 3267010079241744484, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
       propertyPath: m_Name
       value: Canvas User Interface
