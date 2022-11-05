@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour, ITarget
     [SerializeField] private GameObject _player;
 
     [Header("Settings for movement")]
-    [SerializeField] private float _maxDistanceToPlayer = 1.2f;
+    [SerializeField] private float _maxDistanceToPlayer = 1.35f;
 
     private HealthSystem _enemyHealthSystem;
     private NavMeshAgent _enemyMeshAgent;
