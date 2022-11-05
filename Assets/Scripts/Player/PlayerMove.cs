@@ -29,9 +29,16 @@ public class PlayerMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        _playerRigidbody.velocity = new Vector3(_moveInput.x * _playerSpeed, 0, _moveInput.z * _playerSpeed);
+        if(IsGrounded())
+            _playerRigidbody.velocity = new Vector3(_moveInput.x * _playerSpeed, 0, _moveInput.z * _playerSpeed);
+        else
+            _playerRigidbody.velocity = new Vector3(_moveInput.x * _playerSpeed, -10.0f, _moveInput.z * _playerSpeed);
     }
-    private void OnDisable()
+    private bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position, -Vector3.up, 1.2f);
+    }
+private void OnDisable()
     {
         _inputActions.Movement.Newaction.Disable();
     }

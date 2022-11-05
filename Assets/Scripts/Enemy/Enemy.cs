@@ -29,15 +29,16 @@ public class Enemy : MonoBehaviour, ITarget
         _enemyAnimator = GetComponent<Animator>();
 
         _enemySpeed = Random.Range(1.0f, 3.0f);
-        _enemyAnimWeight = Mathf.Clamp(_enemySpeed, 1.0f, 2.0f);
+        _enemyAnimWeight = Mathf.Clamp(_enemySpeed, 0.0f, 1.0f);
     }
     private void Start()
     {
         if (_enemyMeshAgent != null)
         {
-            WalkingToPlayer(_player.transform.position);
             _isActive = false;
             _startPos = transform.position;
+            //_enemyMeshAgent.isStopped = true; //instead of CheckDistance(_startPos)(line 50)
+            WalkingToPlayer(_player.transform.position);
         }
     }
     private void Update()
@@ -46,7 +47,7 @@ public class Enemy : MonoBehaviour, ITarget
             if (_isActive)
                 CheckDistance(_player.transform.position);
             else
-                CheckDistance(_startPos);
+                CheckDistance(_startPos); //can be remove if animation won't work
     }
     private void CheckDistance(Vector3 position)
     {
@@ -69,7 +70,12 @@ public class Enemy : MonoBehaviour, ITarget
         if (_enemyAnimator != null)
         {
             _enemyAnimator.SetBool("isAttacking", false);
-            _enemyAnimator.SetFloat("Speed", _enemyAnimWeight);
+
+            if (_isActive)
+            {
+                _enemyAnimator.SetFloat("Speed", _enemyAnimWeight);
+                _enemyAnimator.SetBool("isActive", _isActive);
+            }
         }
 
         SetMovementPoint(position);
