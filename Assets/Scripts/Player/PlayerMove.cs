@@ -2,34 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private Quaternion _playerRotation;
-    [SerializeField] private float _speed;
+    [SerializeField] private float _playerSpeed;
 
-    private Transform _cameraTransform;
+    private Rigidbody _playerRigidbody;
 
     private PlayerMovement _inputActions;
-    private Vector3 _moveInput;
+    [SerializeField] private Vector3 _moveInput;
 
+    private void Awake()
+    {
+        _playerRigidbody = GetComponent<Rigidbody>();
+    }
     private void OnEnable()
     {
         _inputActions = new PlayerMovement();
 
         _inputActions.Movement.Newaction.Enable();
     }
-    private void Start()
-    {
-        _cameraTransform = this.gameObject.transform.GetChild(0);
-    }
     private void Update()
     {
-        _moveInput = _cameraTransform.forward * _inputActions.Movement.Newaction.ReadValue<Vector3>().y;
-        _moveInput += _cameraTransform.right * _inputActions.Movement.Newaction.ReadValue<Vector3>().x;
-        _moveInput.y = 0;
-
-        transform.position += _moveInput * _speed * Time.deltaTime;
-
+        _moveInput = transform.TransformDirection(_inputActions.Movement.Newaction.ReadValue<Vector3>());
+    }
+    private void FixedUpdate()
+    {
+        _playerRigidbody.velocity = new Vector3(_moveInput.x * _playerSpeed, 0, _moveInput.z * _playerSpeed);
     }
     private void OnDisable()
     {
