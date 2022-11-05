@@ -16,6 +16,8 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
     private PlayerActions _playerActions;
     private AnimationHand _handAnimator;
 
+    private bool _activeShoot;
+
     private void OnEnable()
     {
         _playerActions = new PlayerActions();
@@ -27,6 +29,7 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
         _playerActions.Actions.Reload.performed += context => Reload();
 
         _handAnimator = GetComponentInChildren<AnimationHand>();
+        _activeShoot = false;
     }
 
     private void Shoot()
@@ -43,7 +46,7 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
             if (Physics.Raycast(rayOrigin, _mainCamera.transform.forward, out hitInformation, _shootDistance))
             {
                 ITarget target = hitInformation.transform.GetComponent<ITarget>();
-                if (target != null)
+                if (target != null && _activeShoot)
                     target.ApplyDamage();
             }
 
@@ -66,4 +69,8 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
         return _countOfShoot - _currentCountOfShoot;
     }
 
+    public void SetActiveShoot(bool value)
+    {
+        _activeShoot = true;
+    }
 }
