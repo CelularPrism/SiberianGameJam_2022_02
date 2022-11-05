@@ -11,7 +11,7 @@ public class EnemyAttackChooser : MonoBehaviour
 
     private void Awake()
     {
-        int num = Random.Range(0, _enemyAttack.Count + 1);
+        int num = Random.Range(0, _enemyAttack.Count);
         _enemyAnimator = GetComponent<Animator>();
         _enemyAnimator.runtimeAnimatorController = _enemyAttack[num];
     }
