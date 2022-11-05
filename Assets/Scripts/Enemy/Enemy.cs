@@ -57,8 +57,8 @@ public class Enemy : MonoBehaviour, ITarget
     }
     private void WalkingToPlayer()
     {
-        //_enemyAnimator.SetBool("isAttacking", false);
-        //_enemyAnimator.SetFloat("Speed", _enemyAnimWeight);
+        _enemyAnimator.SetBool("isAttacking", false);
+        _enemyAnimator.SetFloat("Speed", _enemyAnimWeight);
 
         _enemyMeshAgent.SetDestination(_player.transform.position);
         _enemyMeshAgent.speed = _enemySpeed;
