@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{dcc82698-c709-4fb7-915c-63b5f19db67a}">
+		<property name="assetPath">
+			<value>punk dead.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>9.6391836734693879</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e391e878-d245-4b18-a326-335943bbd88e}</destination>
+		</relationship>
+	</object>
+</objects>
