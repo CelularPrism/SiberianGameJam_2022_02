@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
+[RequireComponent(typeof(BoxCollider))]
 public class ActivateZone : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int playerMask;
+    [Header("Атрибут для указания, является ли триггер активатором или наоборот")]
+    [SerializeField] private bool isActivator;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private Enemy[] enemies;
+    [SerializeField] private PlayerShoot playerShoot;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.layer == playerMask)
+        {
+            foreach (Enemy enemy in enemies)
+            {
+                if (enemy != null)
+                {
+                    enemy.SetActive(isActivator);
+                }
+            }
+            playerShoot.SetActiveShoot(isActivator);
+        }
     }
 }

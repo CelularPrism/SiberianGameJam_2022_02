@@ -12,13 +12,15 @@ namespace Enemies
         [SerializeField] private float damage;
 
         HealthSystem _healthSystem;
-        
+        private Enemy _enemy;
+
         bool _attack;
         float _timeAttack;
 
         void Start()
         {
             _timeAttack = Time.time;
+            _enemy =  transform.parent.GetComponent<Enemy>();
         }
 
         private void Update()
@@ -35,7 +37,7 @@ namespace Enemies
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.layer == playerMask)
+            if (other.gameObject.layer == playerMask && _enemy.GetActive())
             {
                 _healthSystem = other.transform.GetComponentInChildren<HealthSystem>();
                 _attack = true;
