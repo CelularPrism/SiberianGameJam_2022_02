@@ -11,8 +11,9 @@ namespace Enemies
         [SerializeField] private int playerMask;
         [SerializeField] private float damage;
 
-        HealthSystem _healthSystem;
+        private HealthSystem _healthSystem;
         private Enemy _enemy;
+        private BoxCollider _enemyBoxCollider;
 
         bool _attack;
         float _timeAttack;
@@ -21,6 +22,7 @@ namespace Enemies
         {
             _timeAttack = Time.time;
             _enemy =  transform.parent.GetComponent<Enemy>();
+            _enemyBoxCollider = GetComponent<BoxCollider>();
         }
 
         private void Update()
@@ -51,6 +53,11 @@ namespace Enemies
                 _healthSystem = null;
                 _attack = false;
             }
+        }
+
+        public void Death()
+        {
+            _enemyBoxCollider.enabled = false;
         }
     }
 }

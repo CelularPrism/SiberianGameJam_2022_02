@@ -21,11 +21,13 @@ public class Enemy : MonoBehaviour, ITarget
     private NavMeshAgent _enemyMeshAgent;
     private Animator _enemyAnimator;
     private CapsuleCollider _enemyCollider;
+    private Attack _enemyAttack;
 
     private float _enemySpeed;
     private float _enemyAnimWeight;
-    private bool _isActive;
 
+    private bool _isActive;
+    private bool _isAlive = true;
     private void Awake()
     {
         _enemyHealthSystem = GetComponent<HealthSystem>();
@@ -33,6 +35,7 @@ public class Enemy : MonoBehaviour, ITarget
         _enemyAnimator = GetComponent<Animator>();
         _enemyCollider = GetComponent<CapsuleCollider>();
         _effectsManager = GetComponent<EffectsManager>();
+        _enemyAttack = GetComponentInChildren<Attack>();
 
         _enemySpeed = Random.Range(1.0f, 3.0f);
         _enemyAnimWeight = Mathf.Clamp(_enemySpeed, 0.0f, 1.0f);
@@ -57,18 +60,21 @@ public class Enemy : MonoBehaviour, ITarget
     }
     private void CheckDistance(Vector3 position)
     {
-        float distance = Vector3.Distance(position, this.transform.position);
+        if (_isAlive)
+        {
+            float distance = Vector3.Distance(position, this.transform.position);
 
-        if (distance <= _maxDistanceToPlayer)
-        {
-            _enemyMeshAgent.isStopped = true;
-            if (_isActive)
-                _enemyAnimator.SetBool("isAttacking", true);
-        }
-        else
-        {
-            _enemyMeshAgent.isStopped = false;
-            WalkingToPlayer(position);
+            if (distance <= _maxDistanceToPlayer)
+            {
+                _enemyMeshAgent.isStopped = true;
+                if (_isActive)
+                    _enemyAnimator.SetBool("isAttacking", true);
+            }
+            else
+            {
+                _enemyMeshAgent.isStopped = false;
+                WalkingToPlayer(position);
+            }
         }
     }
     private void WalkingToPlayer(Vector3 position)
@@ -99,8 +105,11 @@ public class Enemy : MonoBehaviour, ITarget
         {
             _enemyMeshAgent.height = 0.1f;
             _enemyMeshAgent.isStopped = true;
-        }          
+        }
 
+        _isAlive = false;
+
+        _enemyAttack.Death();
         _enemyHealthSystem.Death();
         _effectsManager.Death();
     }
