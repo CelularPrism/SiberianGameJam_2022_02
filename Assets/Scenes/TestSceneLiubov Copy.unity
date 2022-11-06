@@ -619,17 +619,12 @@ Transform:
   m_Father: {fileID: 1561966815}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1186140352 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7971148961839029942, guid: 2f7d58b8e66abd542a664195ff73ac07, type: 3}
-  m_PrefabInstance: {fileID: 1312804151}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1186140353 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2498542581753874677, guid: 2f7d58b8e66abd542a664195ff73ac07, type: 3}
   m_PrefabInstance: {fileID: 1312804151}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186140352}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cbfb51e903d2e84faadc1f405de75b4, type: 3}
@@ -646,10 +641,6 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 1813679291}
-    - target: {fileID: 2498542581753874677, guid: 2f7d58b8e66abd542a664195ff73ac07, type: 3}
-      propertyPath: _maxDistanceToPlayer
-      value: 1.3
-      objectReference: {fileID: 0}
     - target: {fileID: 7337741566562518028, guid: 2f7d58b8e66abd542a664195ff73ac07, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -698,10 +689,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RapEnemyFix
       objectReference: {fileID: 0}
-    - target: {fileID: 8119132369344692405, guid: 2f7d58b8e66abd542a664195ff73ac07, type: 3}
-      propertyPath: death
-      value: 
-      objectReference: {fileID: 1186140352}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f7d58b8e66abd542a664195ff73ac07, type: 3}
 --- !u!4 &1330245681 stripped

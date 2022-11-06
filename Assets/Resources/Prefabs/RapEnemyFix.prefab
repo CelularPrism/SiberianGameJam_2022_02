@@ -1716,7 +1716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLive: 1
-  death: {fileID: 0}
+  death: {fileID: 7971148961839029942}
   health: 0
 --- !u!114 &5267166146868126792
 MonoBehaviour:
@@ -1743,7 +1743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _maxDistanceToPlayer: 1.2
+  _maxDistanceToPlayer: 1.3
 --- !u!95 &1002409832302151807
 Animator:
   serializedVersion: 4
