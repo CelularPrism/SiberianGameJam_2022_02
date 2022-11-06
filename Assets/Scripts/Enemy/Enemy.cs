@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour, ITarget
     private HealthSystem _enemyHealthSystem;
     private NavMeshAgent _enemyMeshAgent;
     private Animator _enemyAnimator;
+    private CapsuleCollider _enemyCollider;
 
     private float _enemySpeed;
     private float _enemyAnimWeight;
@@ -30,6 +31,8 @@ public class Enemy : MonoBehaviour, ITarget
         _enemyHealthSystem = GetComponent<HealthSystem>();
         _enemyMeshAgent = GetComponent<NavMeshAgent>();
         _enemyAnimator = GetComponent<Animator>();
+        _enemyCollider = GetComponent<CapsuleCollider>();
+        _effectsManager = GetComponent<EffectsManager>();
 
         _enemySpeed = Random.Range(1.0f, 3.0f);
         _enemyAnimWeight = Mathf.Clamp(_enemySpeed, 0.0f, 1.0f);
@@ -86,20 +89,29 @@ public class Enemy : MonoBehaviour, ITarget
     }
     public void ApplyDamage()
     {
+        if (_enemyAnimator != null)
+            _enemyAnimator.SetTrigger("Dead");
+
+        if (_enemyCollider != null)           //remove if there is problem
+            _enemyCollider.enabled = false;
+
+        if (_enemyMeshAgent != null)       //remove if there is problem
+        {
+            _enemyMeshAgent.height = 0.1f;
+            _enemyMeshAgent.isStopped = true;
+        }          
+
         _enemyHealthSystem.Death();
         _effectsManager.Death();
     }
-
     public void SetMovementPoint(Vector3 point)
     {
         _enemyMeshAgent.SetDestination(point);
     }
-
     public void SetActive(bool value)
     {
-        _isActive = value;
+            _isActive = value;
     }
-
     public bool GetActive()
     {
         return _isActive;

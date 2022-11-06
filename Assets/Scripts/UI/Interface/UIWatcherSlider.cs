@@ -14,6 +14,7 @@ public class UIWatcherSlider : MonoBehaviour
     {
         _slider = GetComponent<Slider>();
         _health = healthSystem.GetComponent<IPlayerValue>();
+        _slider.maxValue = _health.GetValue();
     }
 
     void Update()
