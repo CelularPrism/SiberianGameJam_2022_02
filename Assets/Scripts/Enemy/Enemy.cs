@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Enemies;
 
 [RequireComponent(typeof(HealthSystem))]
+[RequireComponent(typeof(EffectsManager))]
 public class Enemy : MonoBehaviour, ITarget
 {
     [Header("Player")]
@@ -14,6 +16,7 @@ public class Enemy : MonoBehaviour, ITarget
 
     private Vector3 _startPos;
 
+    private EffectsManager _effectsManager;
     private HealthSystem _enemyHealthSystem;
     private NavMeshAgent _enemyMeshAgent;
     private Animator _enemyAnimator;
@@ -84,6 +87,7 @@ public class Enemy : MonoBehaviour, ITarget
     public void ApplyDamage()
     {
         _enemyHealthSystem.Death();
+        _effectsManager.Death();
     }
 
     public void SetMovementPoint(Vector3 point)
