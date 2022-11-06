@@ -6033,25 +6033,9 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2492452469172142991}
-    - target: {fileID: 6900258703237971308, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+    - target: {fileID: 7789289060972424795, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
+      propertyPath: ShapeModule.m_Texture
       value: 
-      objectReference: {fileID: 2100000, guid: 905a74b5d59086e4eb164b905b44ab7f, type: 2}
-    - target: {fileID: 7185211818954661718, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789289060972424795, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
-      propertyPath: ShapeModule.type
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789289060972424795, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
-      propertyPath: ShapeModule.m_Rotation.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789289060972424795, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
-      propertyPath: ShapeModule.m_Rotation.y
-      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7908455062216128752, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
       propertyPath: _player
