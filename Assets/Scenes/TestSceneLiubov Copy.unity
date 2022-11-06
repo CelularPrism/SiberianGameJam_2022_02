@@ -6170,6 +6170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestPlayerResult
       objectReference: {fileID: 0}
+    - target: {fileID: 2492452468754069013, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2492452468754069015, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
       propertyPath: m_RootOrder
       value: 7
