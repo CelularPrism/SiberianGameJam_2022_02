@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3572c5a9-8689-4b96-bbd1-c738673aabf3}">
+		<property name="assetPath">
+			<value>chain_sfx_chain_Master #4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.88392290249433103</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2444f8b2-d771-43f1-854e-cf064f4a3d23}</destination>
+		</relationship>
+	</object>
+</objects>
