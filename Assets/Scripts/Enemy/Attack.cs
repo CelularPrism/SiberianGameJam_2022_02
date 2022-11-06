@@ -35,6 +35,11 @@ namespace Enemies
             }
         }
 
+        public void PlayAudioAttack()
+        {
+            RuntimeAudio.PlayOneShot("event:/SFX_enemy_castet/castet_punch");
+        }
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.layer == playerMask && _enemy.GetActive())
