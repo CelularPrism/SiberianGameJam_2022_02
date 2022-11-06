@@ -54,7 +54,10 @@ public class Enemy : MonoBehaviour, ITarget
     {
         if (_enemyMeshAgent != null)
             if (_isActive)
+            {
+                Debug.Log(_player.transform.position);
                 CheckDistance(_player.transform.position);
+            }
             else
                 CheckDistance(_startPos); //can be remove if animation won't work
     }
