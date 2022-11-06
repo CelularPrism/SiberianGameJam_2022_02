@@ -54,14 +54,17 @@ public class Enemy : MonoBehaviour, ITarget
             _isActive = false;
             _startPos = transform.position;
             //_enemyMeshAgent.isStopped = true; //instead of CheckDistance(_startPos)(line 50)
-            WalkingToPlayer(_player.transform.position);
+            //WalkingToPlayer(_player.transform.position);
         }
+
     }
     private void Update()
     {
         if (_enemyMeshAgent != null)
             if (_isActive)
+            {
                 CheckDistance(_player.transform.position);
+            }
             else
                 CheckDistance(_startPos); //can be remove if animation won't work
     }

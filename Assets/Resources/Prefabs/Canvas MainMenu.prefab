@@ -1563,7 +1563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af11208bd7466bf458300898f081ff7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numScene: 0
+  numScene: 1
 --- !u!114 &6767724433642658122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1598,7 +1598,7 @@ MonoBehaviour:
     Path: event:/Music/music_menu
   Event: 
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -1853,7 +1853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198.6, y: -36.72653}
+  m_AnchoredPosition: {x: -199, y: 0}
   m_SizeDelta: {x: 244.0049, y: 64.8531}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2054840343345271022

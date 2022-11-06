@@ -47,17 +47,6 @@
                 },
                 {
                     "name": "",
-                    "id": "97cad520-59d6-4134-b977-bbb2bb76ee85",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "c6e87904-eeed-4c52-80a3-952993df8b52",
                     "path": "<Mouse>/delta",
                     "interactions": "",
