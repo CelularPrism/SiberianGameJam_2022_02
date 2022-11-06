@@ -262,7 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLive: 1
   death: {fileID: 2492452468754069003}
-  health: 10
+  health: 5
 --- !u!1001 &1169682704796616864
 PrefabInstance:
   m_ObjectHideFlags: 0
