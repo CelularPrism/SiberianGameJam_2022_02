@@ -282,7 +282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &336055929
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5200,7 +5200,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &654726651
 GameObject:
@@ -5326,6 +5326,10 @@ PrefabInstance:
     - target: {fileID: 5337986761107770652, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
       propertyPath: m_Name
       value: TestEnemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337986761107770652, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5894678040870254349, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
       propertyPath: player
@@ -5762,7 +5766,7 @@ Transform:
   - {fileID: 100785868}
   - {fileID: 1392371223}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1605567140
 GameObject:
@@ -5998,6 +6002,10 @@ PrefabInstance:
       propertyPath: panelDeath
       value: 
       objectReference: {fileID: 464879882}
+    - target: {fileID: 7578913655731963247, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
 --- !u!1 &1813679291 stripped
@@ -6241,6 +6249,10 @@ PrefabInstance:
     - target: {fileID: 5337986761107770652, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
       propertyPath: m_Name
       value: TestEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337986761107770652, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5894678040870254349, guid: aa50d758bb62f7b43869043a6a14c165, type: 3}
       propertyPath: player

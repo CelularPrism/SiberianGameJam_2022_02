@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour, ITarget
         _enemyMeshAgent = GetComponent<NavMeshAgent>();
         _enemyAnimator = GetComponent<Animator>();
         _enemyCollider = GetComponent<CapsuleCollider>();
+        _effectsManager = GetComponent<EffectsManager>();
 
         _enemySpeed = Random.Range(1.0f, 3.0f);
         _enemyAnimWeight = Mathf.Clamp(_enemySpeed, 0.0f, 1.0f);
@@ -94,8 +95,11 @@ public class Enemy : MonoBehaviour, ITarget
         if (_enemyCollider != null)           //remove if there is problem
             _enemyCollider.enabled = false;
 
-        if (_enemyMeshAgent != null)          //remove if there is problem
+        if (_enemyMeshAgent != null)       //remove if there is problem
+        {
             _enemyMeshAgent.height = 0.1f;
+            _enemyMeshAgent.isStopped = true;
+        }          
 
         _enemyHealthSystem.Death();
         _effectsManager.Death();
