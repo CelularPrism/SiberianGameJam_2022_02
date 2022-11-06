@@ -28,6 +28,7 @@ namespace UI
             _inputActions = new MenuInput();
             _inputActions.Menu.OpenCloseMenu.performed += perf => OpenCloseMenu();
             _inputActions.Enable();
+            Time.timeScale = 0;
         }
 
         private void OpenCloseMenu()
@@ -46,6 +47,13 @@ namespace UI
         {
             Debug.Log("Load scene - Main menu");
             //SceneManager.LoadScene(); // Ввести номер сцены меню
+        }
+
+        public void StartGame(PlayerShoot playerShoot)
+        {
+            Debug.Log("Закрытие панели. Обратите внимание на сообщение!");
+            Time.timeScale = 1;
+            playerShoot.enabled = true; // hotfix, чтобы пользователь не выстрелил в момент закрытия записки
         }
 
         public void SetActive(bool active)
