@@ -10,6 +10,7 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
     [SerializeField] private int _shootDistance = 100;
     [SerializeField] private int _countOfShoot = 7;
     [SerializeField] private int _currentCountOfShoot = 0;
+    [SerializeField] private int _layerIgnore;
 
     [Header("Camera")]
     [SerializeField] private Camera _mainCamera;
