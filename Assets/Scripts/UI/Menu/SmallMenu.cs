@@ -36,9 +36,11 @@ namespace UI
             if (_isActive)
             {
                 _panelManager.ClosePanels(_panels);
+                Time.timeScale = 1;
             } else
             {
                 _panelManager.OpenPanel(smallMenu);
+                Time.timeScale = 0;
             }
             _isActive = !_isActive;
         }
