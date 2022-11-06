@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7304492560593352091}
   - component: {fileID: 4771065299512654466}
   - component: {fileID: 8302740201808249324}
+  - component: {fileID: 911597863625441104}
   m_Layer: 0
   m_Name: vyveska
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &911597863625441104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3368012470413530785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01999999, y: 0.040532865, z: 0.030111356}
+  m_Center: {x: -1.4296632e-17, y: 0.0039319717, z: -0.0050556795}

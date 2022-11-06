@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1483992083307545622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9038396779076913260}
+  - component: {fileID: 9128893976394865152}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9038396779076913260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483992083307545622}
+  m_LocalRotation: {x: 0, y: 0.435726, z: 0, w: 0.9000794}
+  m_LocalPosition: {x: -0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5869205343094119062}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 51.663, z: 0}
+--- !u!65 &9128893976394865152
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483992083307545622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.038542543, y: 0.002073898, z: 0.06730131}
+  m_Center: {x: 0.007229868, y: -0.00018226793, z: -0.024734078}
 --- !u!1 &3975043973743742299
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,14 +70,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3975043973743742299}
-  m_LocalRotation: {x: -0.23217408, y: 0.6679036, z: 0.6679036, w: -0.23217401}
+  m_LocalRotation: {x: 0.23217672, y: -0.6679027, z: -0.6679027, w: 0.23217672}
   m_LocalPosition: {x: 133.96013, y: -2.5043726, z: -7.0726}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 9038396779076913260}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -51.663, y: -90, z: -90}
 --- !u!33 &2341778370930387453
 MeshFilter:
   m_ObjectHideFlags: 0

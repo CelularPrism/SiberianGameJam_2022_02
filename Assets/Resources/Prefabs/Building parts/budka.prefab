@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4293291755176777957}
   - component: {fileID: 4413213585451865634}
   - component: {fileID: 4283681647249439830}
+  - component: {fileID: 5274104887249256344}
   m_Layer: 0
   m_Name: budka
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5274104887249256344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5447046497219854582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.119787596, y: 0.119787574, z: 0.1441902}
+  m_Center: {x: 0, y: 0, z: 0.0023943852}
