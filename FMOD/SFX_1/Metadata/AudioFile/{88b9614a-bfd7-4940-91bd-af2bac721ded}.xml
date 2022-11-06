@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{88b9614a-bfd7-4940-91bd-af2bac721ded}">
+		<property name="assetPath">
+			<value>wk_sfx_kastet_whoosh.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.46875283446712018</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{369de138-3250-4f3c-a53e-ad88a22c97a5}</destination>
+		</relationship>
+	</object>
+</objects>
