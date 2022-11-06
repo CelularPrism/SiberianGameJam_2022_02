@@ -10,7 +10,7 @@ public class DeathPlayer : MonoBehaviour, IDeath
     private void Start()
     {
         _nowTime = Time.time;
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
     }
 
     public void Death()
