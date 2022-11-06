@@ -6140,10 +6140,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestPlayerResult
       objectReference: {fileID: 0}
-    - target: {fileID: 2492452468754069013, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2492452468754069015, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -6403,10 +6399,6 @@ PrefabInstance:
       propertyPath: playerAmmo
       value: 
       objectReference: {fileID: 1813679291}
-    - target: {fileID: 3267010079998282224, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3267010080684164970, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
