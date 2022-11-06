@@ -28,6 +28,7 @@ public class AnimationHand : MonoBehaviour
 
     public void PlayAudioShoot()
     {
+        Debug.Log("Shoot");
         RuntimeAudio.PlayOneShot("event:/SFX_player_handgun/shoot");
     }
 }
