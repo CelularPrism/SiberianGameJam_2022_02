@@ -5064,36 +5064,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3267010080825215841, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
   m_PrefabInstance: {fileID: 3267010080712723051}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &464879886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464879882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -199399821
-      Data2: 1119346779
-      Data3: 1832956590
-      Data4: 718881146
-    Path: event:/SFX_dead/death_loop
-  Event: 
-  PlayEvent: 11
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &551810535
 GameObject:
   m_ObjectHideFlags: 0
@@ -6429,6 +6399,10 @@ PrefabInstance:
       propertyPath: playerAmmo
       value: 
       objectReference: {fileID: 1813679291}
+    - target: {fileID: 3267010079998282224, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3267010080684164970, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
