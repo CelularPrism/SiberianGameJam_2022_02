@@ -92,7 +92,7 @@ public class Enemy : MonoBehaviour, ITarget
             _enemyCollider.enabled = false;
 
         if (_enemyMeshAgent != null)          //remove if there is problem
-            _enemyMeshAgent.enabled = false;
+            _enemyMeshAgent.height = 0.1f;
 
         _enemyHealthSystem.Death();
     }
