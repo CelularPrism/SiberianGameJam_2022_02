@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class PlayerShoot : MonoBehaviour, IPlayerValue
 {
@@ -53,9 +54,11 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
             _currentCountOfShoot++;
         }
     }
+
     private void Reload()
     {
         _handAnimator.PlayAnim("Reload");
+        RuntimeAudio.PlayOneShot("event:/SFX_player_handgun/reload");
         _currentCountOfShoot = 0;
     }
     private void OnDisable()

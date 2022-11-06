@@ -125,4 +125,9 @@ public class Enemy : MonoBehaviour, ITarget
     {
         return _isActive;
     }
+
+    public void PlayAudioAttack()
+    {
+        RuntimeAudio.PlayOneShot("event:/SFX_enemy_castet/castet_punch");
+    }
 }
