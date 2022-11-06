@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 21636
+--- !u!114 &-6324007866827462799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/music_menu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/music_menu
+  Guid:
+    Data1: 2035916139
+    Data2: 1180323360
+    Data3: -2016725067
+    Data4: 859877964
+  Banks:
+  - {fileID: 2304681127109548393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 102246
 --- !u!114 &-4932670208352751676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +150,10 @@ MonoBehaviour:
   Path: FMOD/SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638033521204452193
+  lastModified: 638033572393971320
   FileSizes:
   - Name: Desktop
-    Value: 1490
+    Value: 1682
   Exists: 1
 --- !u!114 &-1300338174914535006
 MonoBehaviour:
@@ -240,13 +267,71 @@ MonoBehaviour:
   - {fileID: -8563451214380355962}
   - {fileID: -1300338174914535006}
   - {fileID: -4932670208352751676}
+  - {fileID: 423946849722525983}
+  - {fileID: 1038057662748708279}
+  - {fileID: -6324007866827462799}
+  - {fileID: 7100607447768200658}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2304681127109548393}
   StringsBanks:
   - {fileID: -2038294065571258359}
-  cacheTime: 638033521204452193
+  cacheTime: 638033572393971320
   cacheVersion: 131593
+--- !u!114 &423946849722525983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/music_win
+  m_EditorClassIdentifier: 
+  Path: event:/Music/music_win
+  Guid:
+    Data1: 1556802094
+    Data2: 1297103685
+    Data3: -19977290
+    Data4: -1523590335
+  Banks:
+  - {fileID: 2304681127109548393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18288
+--- !u!114 &1038057662748708279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/break
+  m_EditorClassIdentifier: 
+  Path: event:/Music/break
+  Guid:
+    Data1: -775344317
+    Data2: 1245852042
+    Data3: -909840472
+    Data4: 1215374938
+  Banks:
+  - {fileID: 2304681127109548393}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2691
 --- !u!114 &2198325027102822239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,10 +374,10 @@ MonoBehaviour:
   Path: FMOD/SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638033521204452193
+  lastModified: 638033572393931315
   FileSizes:
   - Name: Desktop
-    Value: 1588288
+    Value: 5107584
   Exists: 1
 --- !u!114 &3575703430163963221
 MonoBehaviour:
@@ -375,6 +460,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2900
+--- !u!114 &7100607447768200658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/music_gameplay
+  m_EditorClassIdentifier: 
+  Path: event:/Music/music_gameplay
+  Guid:
+    Data1: 1654711543
+    Data2: 1192826474
+    Data3: 179579559
+    Data4: -880258080
+  Banks:
+  - {fileID: 2304681127109548393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 141489
 --- !u!114 &7694291316266557292
 MonoBehaviour:
   m_ObjectHideFlags: 0
