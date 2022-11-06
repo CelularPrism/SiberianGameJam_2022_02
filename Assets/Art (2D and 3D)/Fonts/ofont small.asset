@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: ofont
+  m_Name: ofont small
   m_EditorClassIdentifier: 
   hashCode: 130230524
   material: {fileID: 6834180965497269640}
@@ -10848,7 +10848,7 @@ MonoBehaviour:
   m_FallbackFontAssetTable: []
   m_CreationSettings:
     sourceFontFileName: 
-    sourceFontFileGUID: 63ad754e242336f4a96438361e4b2de6
+    sourceFontFileGUID: 2b11dbcceeacbb94e8d9d4b28fa1b2fb
     pointSizeSamplingMode: 0
     pointSize: 15
     padding: 5
@@ -10856,8 +10856,8 @@ MonoBehaviour:
     atlasWidth: 512
     atlasHeight: 512
     characterSetSelectionMode: 6
-    characterSequence: 20-7E,A0-A9,AB,AD-B0,B4-B8,BA-BB,BF-125,128-131,134-148,14C-165,168-17F,189,1CD-1D4,1E6-1EB,1F4-1F5,1F8-1F9,218-21B,21E-21F,226-229,22E-22F,232-233,256,2B9-2BD,2C6-2C7,2D7-2DD,399,39E,3A7,3A9,3B9,3BE,3C7,3C9,3DA-3DB,3DE-3DF,400-401,403-408,40C-451,453-458,45C-45F,490-491,2026
-    referencedFontAssetGUID: 5c8837ace2a8eec43809c22a6cef71bc
+    characterSequence: 20-7E,A0,2026,0000-04ff,0400-04ff
+    referencedFontAssetGUID: 
     referencedTextAssetGUID: 
     fontStyle: 0
     fontStyleModifier: 0
@@ -10897,7 +10897,7 @@ Texture2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OFONT Atlas
+  m_Name: ofont Atlas
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
