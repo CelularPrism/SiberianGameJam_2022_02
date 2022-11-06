@@ -75,7 +75,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2492452468754069003}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7cc47e4887785e34093edb1de8029199, type: 3}
   m_Name: 
@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 2492452469731859115}
   - component: {fileID: 2492452469731859116}
   - component: {fileID: 2492452469731859113}
+  - component: {fileID: 1780228139}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -216,6 +217,19 @@ MonoBehaviour:
   _newXRotation: 0
   _newYRotation: 0
   _rotation: {x: 0, y: 0, z: 0}
+--- !u!114 &1780228139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2492452469731859117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &3863260988467413720
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLive: 1
   death: {fileID: 2492452468754069003}
-  health: 10
+  health: 5
 --- !u!1001 &1169682704796616864
 PrefabInstance:
   m_ObjectHideFlags: 0

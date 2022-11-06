@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{03e0d8e3-99fb-4d62-82ec-5316bd18fc3a}">
+		<property name="assetPath">
+			<value>enemy_dead_untitled_2022-11-06 14-11-09_Insert 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7142857142857142</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{369de138-3250-4f3c-a53e-ad88a22c97a5}</destination>
+		</relationship>
+	</object>
+</objects>

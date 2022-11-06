@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5543efa1-41bd-45d5-885a-096c6cc19330}">
+		<property name="assetPath">
+			<value>sfx_intro_back.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>21.852675736961451</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{369de138-3250-4f3c-a53e-ad88a22c97a5}</destination>
+		</relationship>
+	</object>
+</objects>

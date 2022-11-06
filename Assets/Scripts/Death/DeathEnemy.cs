@@ -6,6 +6,6 @@ public class DeathEnemy : MonoBehaviour, IDeath
 {
     public void Death()
     {
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 2.0f);
     }
 }

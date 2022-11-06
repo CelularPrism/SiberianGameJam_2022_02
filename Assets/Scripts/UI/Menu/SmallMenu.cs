@@ -43,10 +43,9 @@ namespace UI
             _isActive = !_isActive;
         }
 
-        private void Exit()
+        public void Exit(int numScene)
         {
-            Debug.Log("Load scene - Main menu");
-            //SceneManager.LoadScene(); // ¬вести номер сцены меню
+            SceneManager.LoadScene(numScene); // ¬вести номер сцены меню
         }
 
         public void StartGame(PlayerShoot playerShoot)
