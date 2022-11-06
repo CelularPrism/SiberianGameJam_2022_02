@@ -14,6 +14,13 @@ public class Enemy : MonoBehaviour, ITarget
     [Header("Settings for movement")]
     [SerializeField] private float _maxDistanceToPlayer = 1.35f;
 
+    [Header("Settings for movement")]
+    [SerializeField] private float _minSpeed = 2f;
+
+    [Header("Settings for movement")]
+    [SerializeField] private float _maxSpeed= 5f;
+
+
     private Vector3 _startPos;
 
     private EffectsManager _effectsManager;
@@ -37,7 +44,7 @@ public class Enemy : MonoBehaviour, ITarget
         _effectsManager = GetComponent<EffectsManager>();
         _enemyAttack = GetComponentInChildren<Attack>();
 
-        _enemySpeed = Random.Range(1.0f, 3.0f);
+        _enemySpeed = Random.Range(_minSpeed, _maxSpeed);
         _enemyAnimWeight = Mathf.Clamp(_enemySpeed, 0.0f, 1.0f);
     }
     private void Start()
@@ -47,15 +54,15 @@ public class Enemy : MonoBehaviour, ITarget
             _isActive = false;
             _startPos = transform.position;
             //_enemyMeshAgent.isStopped = true; //instead of CheckDistance(_startPos)(line 50)
-            WalkingToPlayer(_player.transform.position);
+            //WalkingToPlayer(_player.transform.position);
         }
+
     }
     private void Update()
     {
         if (_enemyMeshAgent != null)
             if (_isActive)
             {
-                Debug.Log(_player.transform.position);
                 CheckDistance(_player.transform.position);
             }
             else
