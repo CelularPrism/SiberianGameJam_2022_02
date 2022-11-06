@@ -1134,7 +1134,6 @@ GameObject:
   - component: {fileID: 919132147958914743}
   - component: {fileID: 919132147958914745}
   - component: {fileID: 919132147958914744}
-  - component: {fileID: 2301799642061056342}
   - component: {fileID: 2182078597533531140}
   - component: {fileID: 5692567710882685315}
   - component: {fileID: 919132147958914749}
@@ -1218,20 +1217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   _maxDistanceToPlayer: 1.35
---- !u!136 &2301799642061056342
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5201377116097802287}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.35
-  m_Height: 1.9
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.85, z: 0}
 --- !u!195 &2182078597533531140
 NavMeshAgent:
   m_ObjectHideFlags: 0
