@@ -5758,10 +5758,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 796028293766399453, guid: 2f7d58b8e66abd542a664195ff73ac07, type: 3}
-      propertyPath: m_Center.y
-      value: -0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 2498542581753874677, guid: 2f7d58b8e66abd542a664195ff73ac07, type: 3}
       propertyPath: _player
       value: 
@@ -6191,10 +6187,6 @@ PrefabInstance:
     - target: {fileID: 5201377116097802287, guid: eed0af4cb4216fd4ea79625b22c66ee0, type: 3}
       propertyPath: m_Name
       value: RapEnemySecond
-      objectReference: {fileID: 0}
-    - target: {fileID: 8557811454959908356, guid: eed0af4cb4216fd4ea79625b22c66ee0, type: 3}
-      propertyPath: m_Center.y
-      value: -0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eed0af4cb4216fd4ea79625b22c66ee0, type: 3}

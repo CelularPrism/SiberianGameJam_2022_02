@@ -10,7 +10,8 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
     [SerializeField] private int _shootDistance = 100;
     [SerializeField] private int _countOfShoot = 7;
     [SerializeField] private int _currentCountOfShoot = 0;
-    [SerializeField] private int _layerIgnore;
+    
+    private int _layerIgnore = 1 << 6;
 
     [Header("Camera")]
     [SerializeField] private Camera _mainCamera;
@@ -45,7 +46,9 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
 
             Vector3 rayOrigin = _mainCamera.ViewportToWorldPoint(_aimCenter);
 
-            if (Physics.Raycast(rayOrigin, _mainCamera.transform.forward, out hitInformation, _shootDistance))
+            _layerIgnore = ~_layerIgnore;
+
+            if (Physics.Raycast(rayOrigin, _mainCamera.transform.forward, out hitInformation, _shootDistance, _layerIgnore))
             {
                 ITarget target = hitInformation.transform.GetComponent<ITarget>();
                 if (target != null && _activeShoot)

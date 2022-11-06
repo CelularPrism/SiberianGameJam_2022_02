@@ -6179,7 +6179,7 @@ GameObject:
   - component: {fileID: 7467832027062872902}
   - component: {fileID: 8557811454959908356}
   - component: {fileID: 7002598355282781124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
