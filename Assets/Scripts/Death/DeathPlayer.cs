@@ -18,5 +18,8 @@ public class DeathPlayer : MonoBehaviour, IDeath
         RuntimeAudio.PlayOneShot("event:/SFX_dead/dead_or_lose_1");
         Time.timeScale = 0;
         panelDeath.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

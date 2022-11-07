@@ -6188,6 +6188,14 @@ PrefabInstance:
       propertyPath: panelDeath
       value: 
       objectReference: {fileID: 464879882}
+    - target: {fileID: 2492452469731859113, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
+      propertyPath: _cameraRotationSpeed
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492452469731859113, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
+      propertyPath: _playerRotationSpeed
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
 --- !u!1 &1813679291 stripped
@@ -6303,10 +6311,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3267010079020544128, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
+    - target: {fileID: 1853566299548442790, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
       propertyPath: healthSystem
       value: 
       objectReference: {fileID: 1863074083}
+    - target: {fileID: 2745391514963567896, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745391514963567896, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3267010079241744484, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
       propertyPath: m_Name
       value: Canvas User Interface
@@ -6399,26 +6415,6 @@ PrefabInstance:
       propertyPath: playerAmmo
       value: 
       objectReference: {fileID: 1813679291}
-    - target: {fileID: 3267010080684164970, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3267010080684164970, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3267010080915676567, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3267010080915676567, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3267010080915676567, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a95a15e3754e07f4aa68526112299f34, type: 3}
 --- !u!1001 &5894678040870254340

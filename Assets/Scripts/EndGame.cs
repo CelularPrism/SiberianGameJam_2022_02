@@ -14,6 +14,9 @@ public class EndGame : MonoBehaviour
         {
             endGame.gameObject.SetActive(true);
             Time.timeScale = 0;
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

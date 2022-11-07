@@ -36,6 +36,9 @@ public class PlayerShoot : MonoBehaviour, IPlayerValue
 
         _layerIgnore = 1 << 6;
         _layerIgnore = ~_layerIgnore;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void Shoot()

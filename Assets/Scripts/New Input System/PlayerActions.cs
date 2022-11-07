@@ -38,7 +38,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Rotation"",
-                    ""type"": ""Value"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""635ccd72-1a3e-4d55-a899-b0a9410f80af"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
