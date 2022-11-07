@@ -37,7 +37,8 @@ namespace UI
             {
                 _panelManager.ClosePanels(_panels);
                 Time.timeScale = 1;
-            } else
+            } 
+            else
             {
                 _panelManager.OpenPanel(smallMenu);
                 Time.timeScale = 0;

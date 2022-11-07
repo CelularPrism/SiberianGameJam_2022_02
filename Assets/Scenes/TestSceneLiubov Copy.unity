@@ -5581,10 +5581,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1065070997, guid: 23031b29f3212c1458408362204e30bc, type: 3}
-      propertyPath: StopEvent
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4475348027836452125, guid: 23031b29f3212c1458408362204e30bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
@@ -6190,11 +6186,11 @@ PrefabInstance:
       objectReference: {fileID: 464879882}
     - target: {fileID: 2492452469731859113, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
       propertyPath: _cameraRotationSpeed
-      value: 125
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2492452469731859113, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}
       propertyPath: _playerRotationSpeed
-      value: 150
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1495e6e3f94414bb8c94e14095ba5a, type: 3}

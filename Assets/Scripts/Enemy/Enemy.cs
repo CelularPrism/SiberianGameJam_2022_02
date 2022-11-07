@@ -105,6 +105,8 @@ public class Enemy : MonoBehaviour, ITarget
     }
     public void ApplyDamage()
     {
+        _enemyAttack.Death();
+
         if (_enemyAnimator != null)
             _enemyAnimator.SetTrigger("Dead");
 
@@ -119,7 +121,6 @@ public class Enemy : MonoBehaviour, ITarget
 
         _isAlive = false;
 
-        _enemyAttack.Death();
         _enemyHealthSystem.Death();
         _effectsManager.Death();
     }

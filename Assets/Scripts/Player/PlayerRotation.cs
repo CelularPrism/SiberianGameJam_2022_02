@@ -22,7 +22,7 @@ public class PlayerRotation : MonoBehaviour
     private void LateUpdate()
     {
         _rotation = new Vector3(_playerActions.Actions.Rotation.ReadValue<Vector2>().x, 
-            _playerActions.Actions.Rotation.ReadValue<Vector2>().y, 0.0f).normalized;
+            _playerActions.Actions.Rotation.ReadValue<Vector2>().y, 0.0f);
 
         _newXRotation = (transform.rotation.eulerAngles.x - (_rotation.y * _cameraRotationSpeed * Time.deltaTime));
 

@@ -8,11 +8,24 @@ namespace UI
     {
         public void OpenPanel(GameObject panel)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             panel.SetActive(true);
         }
 
         public void ClosePanel(GameObject panel)
         {
+            panel.SetActive(false);
+        }
+
+        public void ClosePanelSmallMenu(GameObject panel)
+        {
+            Time.timeScale = 1;
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
             panel.SetActive(false);
         }
 
@@ -22,6 +35,8 @@ namespace UI
             {
                 go.SetActive(true);
             }
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
 
         public void ClosePanels(GameObject[] panels)
@@ -30,6 +45,11 @@ namespace UI
             {
                 go.SetActive(false);
             }
+
+            Time.timeScale = 1;
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }

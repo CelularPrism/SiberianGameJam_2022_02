@@ -20,7 +20,7 @@ namespace Enemies
 
         void Start()
         {
-            _timeAttack = Time.time;
+            //_timeAttack = Time.time;
             _enemy =  transform.parent.GetComponent<Enemy>();
             _enemyBoxCollider = GetComponent<BoxCollider>();
         }
@@ -48,6 +48,7 @@ namespace Enemies
             {
                 _healthSystem = other.transform.GetComponentInChildren<HealthSystem>();
                 _attack = true;
+                _timeAttack = Time.time;
             }
         }
 
@@ -55,14 +56,15 @@ namespace Enemies
         {
             if (other.gameObject.layer == playerMask)
             {
-                _healthSystem = null;
                 _attack = false;
+                _healthSystem = null;
             }
         }
 
         public void Death()
         {
             _enemyBoxCollider.enabled = false;
+            _attack = false;
         }
     }
 }
